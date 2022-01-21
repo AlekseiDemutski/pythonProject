@@ -29,9 +29,9 @@ print(byte_string.decode())
 
 cost = int(input(' Insert your cost'))
 if cost > 500:
-    print('True')
+    print('Your cost is greater than 500')
 else:
-    print('False')
+    print('Your cost is less than 500')
 
 
 
