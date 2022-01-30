@@ -19,6 +19,7 @@ var1 = "jack"
 var2 = "hello"
 var3 = "MY NAME IS"
 print(var2.capitalize() + ', ' + var3.lower(), var1.replace('jack', 'Jack'))
+print(f'{var2.capitalize()}, {var3.lower()} {var1.capitalize()}') #второй более верный вариант
 
 # Write a code to return byte_string text value
 byte_string = b"\316\273"

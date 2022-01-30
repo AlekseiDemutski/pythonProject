@@ -18,9 +18,12 @@ code_1 = '354'
 code_3 = 132
 
 secret_code = str(code_1) + '-' + str(code_2) + '-' + str(code_3)
-# print(secret_code)
+secret_code = f'{code_1}-{code_2}-{code_3}' #второй и лучший способ
+print(secret_code)
 
 print('Hello', first_name, last_name + '. You are', age, 'years old. Your secret code is', secret_code + '.')
+print(f'Hello {first_name} {last_name}. You are {current_year - year_of_birth} years old.'
+      f' Your secret code is {secret_code}.') #Второй и лучший способ
 
 
 
