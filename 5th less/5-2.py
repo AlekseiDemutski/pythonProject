@@ -1,33 +1,33 @@
-condition = True
-while condition:
-    user_choise = input("Please choose:\n1.Print 'Hello world'\n2.Print 'Hello planet\n"
-                        "3.Exit\n--> ")
-
-    if user_choise == '1':
-        print("Hello world")
-    elif user_choise == '2':
-        print('Hello planet')
-    elif user_choise == '3':
-        quit()
-    elif user_choise == '4':
-        x = 100
-        while x > 0:
-            print(x)
-            x -= 1
-    else:
-        print('Choise is out of range')
-
-print("Good bye")
-
-x = 0
-while x < 101:
-        if x % 5 == 0 and x % 3 == 0:
-            print(x, 'FizzBuzz')
-        elif x % 3 == 0:
-            print(x, 'Fizz')
-        elif x % 5 == 0:
-            print(x, 'Buzz')
-        x += 1
+# condition = True
+# while condition:
+#     user_choise = input("Please choose:\n1.Print 'Hello world'\n2.Print 'Hello planet\n"
+#                         "3.Exit\n--> ")
+#
+#     if user_choise == '1':
+#         print("Hello world")
+#     elif user_choise == '2':
+#         print('Hello planet')
+#     elif user_choise == '3':
+#         quit()
+#     elif user_choise == '4':
+#         x = 100
+#         while x > 0:
+#             print(x)
+#             x -= 1
+#     else:
+#         print('Choise is out of range')
+#
+# print("Good bye")
+#
+# x = 0
+# while x < 101:
+#         if x % 5 == 0 and x % 3 == 0:
+#             print(x, 'FizzBuzz')
+#         elif x % 3 == 0:
+#             print(x, 'Fizz')
+#         elif x % 5 == 0:
+#             print(x, 'Buzz')
+#         x += 1
 
 
 # distance_to_target = float(input('lPlease enter distance in km'))
@@ -44,4 +44,13 @@ while x < 101:
 #     step_ctn += 1
 # print('Steps to walk')
 
+
+x = 2
+
+while True:
+    print(x + 2)
+    x = x + 2
+    if x == 1000:
+        print('END')
+        break
 
