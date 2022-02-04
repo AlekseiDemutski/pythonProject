@@ -1,13 +1,4 @@
-
-n = input('Enter elements: ')
-n.split(' ')
-for x in n:
-    y = input()
-
-
-    # lst.append(x)
-    # lst.reverse()
-# print(n)
-
-
-
+num = input().split(' ')
+num.reverse()
+for x in num:
+    print(x)
