@@ -1,5 +1,7 @@
 def input_check():
+    global user_input
     while True:
+        user_input = input('Please enter your ID: ')
         try:
             if user_input.lower() == 'exit':
                 print('Good bye')
@@ -13,13 +15,14 @@ def input_check():
                 raise UserWarning
         except ValueError:
             print('ID you entered is not numeric!')
-            break
         except UserWarning:
             print('ID you entered is not 11 digits long!')
+        else:
             break
 
 
 def user_gender():
+    global user_input
     if user_input[0] == '1':
         gender = 'Man'
     elif user_input[0] == '2':
@@ -38,6 +41,7 @@ def user_gender():
 
 
 def dob():
+    global user_input
     byear = user_input[1:3]
     bmonth = user_input[3:5]
     bday = user_input[5:7]
@@ -45,6 +49,7 @@ def dob():
 
 
 def region():
+    global user_input
     if int(user_input[7:10]) in range(1, 11):
         bregion = 'Kuressaare haigla'
     elif int(user_input[7:10]) in range(11, 20):
@@ -81,6 +86,7 @@ def region():
 
 
 def validate():
+    global user_input
     check_list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
     check_list2 = [3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
     result = 0
@@ -130,7 +136,7 @@ def user_menu():
             print('Value is out of range. Try again.')
 
 
-user_input = input('Please enter your ID: ')
+user_input = ''
 input_check()
 user_menu()
 user_gender()
