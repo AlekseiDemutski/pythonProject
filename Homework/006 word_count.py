@@ -10,11 +10,13 @@ print('Количество слов в тексте: ',len(words))
 uniq_words = set(words)
 print('Количество уникальных слов в тексте: ', len(uniq_words))
 
-with open('alpf_list.txt', 'w') as wfile:
+with open('alpf_list.txt', 'w', encoding='utf-8') as wfile:
     alpf_words = list(uniq_words)
     alpf_words.sort()
     for wor in alpf_words:
-        print(wor)
+        wfile.write(wor + "\n")
+
+
 
 
 
